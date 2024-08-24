@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+from inference.inference import inference
 
 # Flast app
 app = Flask(__name__)
@@ -11,13 +12,14 @@ def index():
 # On send request
 @app.route('/send_message', methods=['POST'])
 def send_message():
+    # Data from the form.
     data = request.json
     user_message = data.get('message')
 
-    # Here you can handle the message and generate a response
-    # For now, it simply returns a generic response
-    bot_response = 'Ohh! hi whats up?'
+    # inference.
+    bot_response = inference(user_message)
 
+    # Returning inference.
     return jsonify({'response': bot_response})
 
 

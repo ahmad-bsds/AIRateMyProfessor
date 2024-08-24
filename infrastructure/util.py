@@ -21,7 +21,7 @@ def read_json_file(file_path):
 def load_env(name: str):
   """function to load environment variable."""
   # Specify the path to your .env file
-  env_path = '../.env'
+  env_path = '/etc/secrets/.env_var' # ../.env
 
   # Load the .env file
   load_dotenv(dotenv_path=env_path)

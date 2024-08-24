@@ -51,7 +51,6 @@ def insert_data():
 # insert_data()
 
 # Retrieve data:
-
 def query(prompt: str):
     """Function is used to return the data related to the given prompt."""
     def retrieve():

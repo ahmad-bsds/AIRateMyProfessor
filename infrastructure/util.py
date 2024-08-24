@@ -25,10 +25,10 @@ def load_env(name: str):
 
   # Load the .env file
   try:
-   load_dotenv(dotenv_path=env_path)
-   print("Env variables loaded successfully!")
-  except:
-    print("Env variables loading failed!")
+    load_dotenv(dotenv_path=env_path)
+    print("env file loaded successfully.")
+  except Exception as e:
+    print(f"An error occurred while loading .env file: {e}")
 
   # Now you can access the environment variables
   return os.getenv(name)

@@ -39,7 +39,7 @@ genai.configure(api_key=load_env("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Getting inference:
-def inference(prompt: str):
+def inference_response(prompt: str):
     data = query(prompt=prompt)
     data_str = json.dumps(data, indent=2) # handel data as we are parsing again data containing {}.
     formatted_prompt = system_prompt.format(data=data_str, prompt=prompt)

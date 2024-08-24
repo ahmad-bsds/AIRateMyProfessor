@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from inference.inference import inference
+from inference.inference_engine import inference_response
 
 # Flast app
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def send_message():
     user_message = data.get('message')
 
     # inference.
-    bot_response = inference(user_message)
+    bot_response = inference_response(user_message)
 
     # Returning inference.
     return jsonify({'response': bot_response})

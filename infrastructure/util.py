@@ -24,7 +24,11 @@ def load_env(name: str):
   env_path = '../etc/secrets/.env_var' # ../.env
 
   # Load the .env file
-  load_dotenv(dotenv_path=env_path)
+  try:
+   load_dotenv(dotenv_path=env_path)
+   print("Env variables loaded successfully!")
+  except:
+    print("Env variables loading failed!")
 
   # Now you can access the environment variables
   return os.getenv(name)

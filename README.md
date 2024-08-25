@@ -7,13 +7,13 @@ Welcome to the Professor Insights project! This application reviews professors' 
 To get started with Professor Insights, clone the repository using the following command:
 
 ```bash
-https://github.com/ahmad-bsds/AIRateMyProfessor/tree/master
+git clone https://github.com/ahmad-bsds/AIRateMyProfessor/tree/master
 ```
 
 ## Install Packages
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Run app.py

@@ -1,6 +1,7 @@
 # AI Rate my Professor
 
 Welcome to the Professor Insights project! This application reviews professors' ratings and reviews, providing valuable answers and insights.
+https://airatemyprofessor.onrender.com/
 
 ## Cloning the Repository
 
@@ -15,6 +16,8 @@ git clone https://github.com/ahmad-bsds/AIRateMyProfessor
 ```bash
 pip install -r requirements.txt
 ```
+
+## OPTIONAL: Place your professor's data in "data.json" in JSON formate.
 
 ## Run
 Run app.py

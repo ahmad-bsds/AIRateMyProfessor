@@ -16,6 +16,12 @@ git clone https://github.com/ahmad-bsds/AIRateMyProfessor
 pip install -r requirements.txt
 ```
 
-## Run app.py
+## Run
+Run app.py
+
+If there will be error try this:
+```bash
+cd application && flask run
+```
 
 

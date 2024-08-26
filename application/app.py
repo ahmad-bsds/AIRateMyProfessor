@@ -1,9 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 from inference.inference_engine import inference_response
 from waitress import serve # production server.
-import sys
-import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Flast app
 app = Flask(__name__)

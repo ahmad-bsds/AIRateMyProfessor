@@ -44,5 +44,3 @@ def inference_response(prompt: str):
     data_str = json.dumps(data, indent=2) # handel data as we are parsing again data containing {}.
     formatted_prompt = system_prompt.format(data=data_str, prompt=prompt)
     return model.generate_content(formatted_prompt).text
-
-# print(inference("Suggest me a teacher which brings real world experience to the class."))

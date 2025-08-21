@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import os
 
-os.environ['API_KEY'] ="AIzaSyCzd-Zikh2jDCQi4ASoJJYiTJ8AsSPNAU0"
+os.environ['API_KEY'] = "kEY"
 genai.configure(api_key=os.environ["API_KEY"])
 
 # Function to embed incoming text.
